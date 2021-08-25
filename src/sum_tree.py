@@ -57,6 +57,9 @@ class Node:
 
 
 class SumTree:
+    """ Based on the following implementation:
+    https://adventuresinmachinelearning.com/sumtree-introduction-python/"""
+    
     def __init__(self, tree_inputs: Collection, seed: int):
         nodes = [Node.create_leaf(inp, idx) for idx, inp in enumerate(tree_inputs)]
         self.leafs = nodes
@@ -88,4 +91,3 @@ class SumTree:
         for val, idx in zip(values, idxs):
             self.leafs[idx].update(val.detach().item())
         self.max = max(max(values), self.max)
-
