@@ -91,11 +91,11 @@ python3 -m pip install .
   folder
 
 ```bash
-git clone https://github.com/jhonasiv/cont-control-udacity
-cd cont-control-udacity
+git clone https://github.com/jhonasiv/reacher-udacity
+cd reacher-udacity
 mkdir world
 wget https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip
-unzip Reacger_Linux.zip -d world
+unzip Reacher_Linux.zip -d world
 ```
 
 ---
